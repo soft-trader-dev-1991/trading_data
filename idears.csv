@@ -1,0 +1,46 @@
+pairs,filter_value
+LQD/BDN,recession
+HYG/BND,recession
+HYG/BND,early
+BND/TIP,recession
+TIP/BND,early
+TIP/BND,mid
+EMB/BND,recession
+EMB/BND,early
+MUB/BND,late
+
+
+DBC/DBE,recession
+DBE/DBC,early
+GLTR/DBC,recession
+DBC/DBB,late
+DBB/DBC,recession
+DBA/DBC,recession
+DBC/USO,recession
+USO/DBC,early
+DBC/UNG,recession
+DBC/UNG,late
+PPLT/DBC,recession
+DBC/PPLT,mid
+SLV/DBC,recession
+GLD/DBC,recession
+CPER/DBC,recession
+DBC/CORN,recession
+CORN/WEAT,recession
+DBC/WEAT,mid
+
+{
+                'early':{'long':['XLF','XLP','XLB','USO'],'short':['XLY','XLU','XLC','GLD','AGG']},
+                'mid':{'long':['XLK','XLV'],'short':['XLU','XLC']},
+                'late':{'long':['XLK','SPY'],'short':['XLB','XLC','PPLT','SLV','AGG']},
+                'recession':{'long':['XLY','XLC','GLD','SLV','PPLT'],'short':['XLE','XLRE','USO','UNG']}
+                }
+                
+
+
+{
+'early':{'bond':{'long':['HYG','TIP','EMB'],'short':['BND']},'commodity':{'long':['USO','DBE'],'short':['DBC']},'stock':{'long':['XLF','XLP','XLB'],'short':['XLY','XLU','XLC']}},
+'mid':{'bond':{'long':['TIP'],'short':['BND']},'commodity':{'long':['DBC'],'short':['WEAT']},'stock':{'long':['XLK','XLV'],'short':['XLU','XLC']}},
+'late':{'bond':{'long':['MUB'],'short':['BND']},'commodity':{'long':['DBC'],'short':['UNG','DBB']},'stock':{'long':['XLK'],'short':['XLB','XLC']}},
+'recession':{'bond':{'long':['LQD','HYG','EMB'],'short':['TIP']},'commodity':{'long':['GLTR','DBB','DBA','PPLT','SLV','GLD','CPER'],'short':['DBE','USO','UNG','CORN','WEAT']},'stock':{'long':['XLY','XLC'],'short':['XLE','XLRE']}}
+}
